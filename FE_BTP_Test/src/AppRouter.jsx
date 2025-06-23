@@ -8,6 +8,7 @@ import AppLayout from './components/AppLayout';
 
 function AppRouter() {
   const [user, setUser] = useState(null);
+  const [language, setLanguage] = useState('en');
 
   if (!user) {
     return <Login onLogin={setUser} />;
@@ -15,11 +16,11 @@ function AppRouter() {
 
   return (
     <Router>
-      <AppLayout user={user}>
+      <AppLayout user={user} language={language} setLanguage={setLanguage}>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/reports" element={<Reports />} />
+          <Route path="/" element={<Dashboard language={language} />} />
+          <Route path="/users" element={<Users language={language} />} />
+          <Route path="/reports" element={<Reports language={language} />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </AppLayout>

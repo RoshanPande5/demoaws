@@ -4,9 +4,8 @@ import TopHeader from './TopHeader';
 import LanguageToggler from '../atoms/LanguageToggler';
 import { Container, Row, Col } from 'react-bootstrap';
 
-function AppLayout({ user, children }) {
+function AppLayout({ user, children, language = 'en', setLanguage, companyProp }) {
   const [minimized, setMinimized] = useState(true);
-  const [language, setLanguage] = useState('en');
   const [company, setCompany] = useState(1);
   // Track active route for sidebar highlighting
   const path = window.location.pathname;
