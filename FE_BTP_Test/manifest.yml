@@ -1,0 +1,8 @@
+applications:
+  - name: vite-react-btp
+    path: dist
+    memory: 128M
+    buildpacks:
+      - staticfile_buildpack
+    routes:
+      - route: vite-react-btp-dev.cfapps.us10-001.hana.ondemand.com

@@ -1,0 +1,10 @@
+---
+applications:
+  - name: btptest-django
+    memory: 512M
+    path: .
+    buildpacks:
+      - python_buildpack
+    command: gunicorn BTPTest.wsgi --log-file -
+    routes:
+      - route: btptest-django-dev.cfapps.us10-001.hana.ondemand.com
