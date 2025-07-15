@@ -5,4 +5,4 @@ applications:
     buildpacks:
       - staticfile_buildpack
     routes:
-      - route: vite-react-btp-dev.cfapps.us10-001.hana.ondemand.com
+      - route: vite-react-btp-dev2233.cfapps.us10-001.hana.ondemand.com
