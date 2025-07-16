@@ -1,1 +1,1 @@
-web: gunicorn BTPTest.wsgi --log-file - 
+web: gunicorn BTPTest.wsgi --log-file -
