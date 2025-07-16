@@ -1,5 +1,5 @@
 applications:
-  - name: vite-react-btp
+  - name: git-react
     path: dist
     memory: 128M
     buildpacks:
