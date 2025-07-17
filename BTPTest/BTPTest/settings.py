@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9ihnn#a993ymepfc#vw-70att@3hw3bqwy$=5&k6*at3^m$%j1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['btptest-django-dev2233git.cfapps.us10-001.hana.ondemand.com']
+ALLOWED_HOSTS = ['btptest-dev.cfapps.us10-001.hana.ondemand.com']
 
 
 # Application definition
