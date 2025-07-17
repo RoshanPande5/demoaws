@@ -1,8 +1,8 @@
 applications:
-  - name: git-react
+  - name: FE-BTP-TEST-FRONTEND
     path: dist
     memory: 128M
     buildpacks:
       - staticfile_buildpack
     routes:
-      - route: vite-react-btp-dev2233.cfapps.us10-001.hana.ondemand.com
+      - route: fe-btp-test-dev.cfapps.us10-001.hana.ondemand.com
