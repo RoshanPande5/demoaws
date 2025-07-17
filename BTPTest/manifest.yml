@@ -1,10 +1,10 @@
 ---
 applications:
-  - name: btptest-django(Git)
+  - name: BTP-TEST-BACKEND
     memory: 512M
     path: .
     buildpacks:
       - python_buildpack
     command: gunicorn BTPTest.wsgi --log-file -
     routes:
-      - route: btptest-django-dev2233Git.cfapps.us10-001.hana.ondemand.com
+      - route: btptest-dev.cfapps.us10-001.hana.ondemand.com
